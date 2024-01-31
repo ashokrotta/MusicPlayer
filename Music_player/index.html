@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Pod</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/music-headphone-png.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="con">
+        <div class="image">
+            <!-- <p>❤️Ashok's Favourite❤️</p> -->
+            <!-- <img id='here1' src="Images/music-headphone-png.png" alt=""> -->
+            <img id='here2' class="here2" src="Images/music-headphone-png.png" alt="">
+        </div>
+        <h3 class="title" style="font-family: cursive; font-weight: 100; font-size: 1rem;">Music/Beauty and a Beat.mp3</h3>
+        <audio controls id="myaudio" autoplay loop>
+            <source id="mysrc" src="Music/Beauty and a Beat.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <!-- <button class="butt" onclick="next()">Next</button> -->
+        <div class="buttoncon">
+            <div class="back" onclick="clickback()">
+                <div class="butt color01"></div>
+            <div class="butt color02"></div>
+            </div>
+
+            <div class="next" onclick="clickok()">
+                <div class="butt color01"></div>
+            <div class="butt color02"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+    <!-- <img src="Images/Preminche Premava.jpg"> -->
+</body>
+</html>

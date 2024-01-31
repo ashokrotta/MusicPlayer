@@ -1,0 +1,140 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+}
+
+/* #myaudio::-webkit-media-controls {
+    background-color: rebeccapurple;
+    z-index: -1;
+} */
+#myaudio::-webkit-media-controls-panel {
+    /* z-index: 11; */
+    background: linear-gradient(45deg, #d192bf, #ecc1d6);
+    color: white;
+    /* padding: 1rem 1rem; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+}
+
+.con {
+  background: linear-gradient(45deg, #ffccd5, #ffb6c1);
+  border-radius: 10px;
+  padding: 4rem 2rem;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  /* height: 10rem; */
+  width: 18rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.butt {
+    /* margin-top: 1.5rem; */
+    align-self: center;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(90deg);
+    margin-left: -0.5rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: scroll 4.5s linear infinite;
+    
+}
+@keyframes scroll {
+    0% {
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+@keyframes o010 {
+    /* 70%{
+        filter:opacity(.6);
+    } */
+    70%{
+        filter:opacity(.7);
+    }
+    100%{
+        filter:opacity(.0);
+    }    
+}
+.back {
+    transform: rotate(180deg);
+}
+.back:hover {
+    transition: scale .2s;
+    transform: rotate(180deg) scale(1.1)
+}
+
+.buttoncon {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.next,.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    
+}
+.next:hover{
+    transition: scale .2s;
+    transform: scale(1.1);
+}
+.butt:active, .back:active{
+    cursor: default;
+}
+
+.color01 {
+    background-color:#d192bf;
+    z-index: 1;
+}
+.color02{
+    background-color: #cb9db4;
+    z-index: 0;
+    height: 1.4rem;
+    width: 1.4rem;
+}
+.image {
+    align-self: center;
+}
+.image img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    
+}
+
+#here2{
+    margin-bottom: 1rem;
+}
+.here2 {
+    animation: rotate 4.5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
